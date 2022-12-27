@@ -18,10 +18,17 @@
                     </tbody>
             </table>
                     <div class="container bg-danger text-white" align="center"><h3>Gtu Result</h3></div>
+                    <marquee width="100%" direction="left" style="color: #dc3545; background-color: white; font">
+                        <b>->BE SEM-8 REGULAR RESULT DECLARED &nbsp &nbsp &nbsp 
+                    ->BA SEM-6 REMEDIAL RESULT DECLARED &nbsp &nbsp &nbsp
+                ->BH SEM-4 REGULAR RESULT DECLARED &nbsp &nbsp &nbsp
+                ->BE SEM-6 REMEDIAL RESULT DECLARED &nbsp &nbsp &nbsp
+                ->LIST OF RECHECK/REASSESSMENT DATES</b>
+                </marquee>
                 <h4>search &#128269;</h4>
                 <form action="gturesult.html">
                         <div class="form-group col-md-4">
-                    <label for="inputState">Session</label>
+                    <label for="inputState"><b>Session</b></label>
                     <select id="inputState" class="form-control" required="required">
                         <option selected="">Summer</option>
                         <option>Winter</option>
@@ -29,15 +36,22 @@
                 </div>
                 
                 <div class="form-group col-md-4">
-                    <label for="inputexam">Exam Type</label>
+                    <label for="inputexam"><b>Course</b></label>
                     <select id="inputexam" class="form-control">
-                        <option selected>Regular</option>
-                        <option>Remedial</option>
-                        <option>Special Case</option>
+                        <option selected>----</option>
+                        <option>BE</option>
+                        <option>DE</option>
+                        <option>BH</option>
+                        <option>BA</option>
+                        <option>BI</option>
+                        <option>BPH</option>
+                        <option>BV</option>
+                        <option>CS</option>
+                        <option>DA</option>
                     </select>
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="inputsem">Semester</label>
+                    <label for="inputsem"><b>Semester</b></label>
                     <select id="inputsem" class="form-control">
                         <option selected>1</option>
                         <option>2</option>
@@ -49,18 +63,26 @@
                         <option>8</option>
                     </select>
                 </div>
+                <div class="form-group col-md-4">
+                    <label for="inputexam"><b>Exam Type</b></label>
+                    <select id="inputexam" class="form-control">
+                        <option selected>Regular</option>
+                        <option>Remedial</option>
+                        <option>Special Case</option>
+                    </select>
+                </div>
                
                     <div class="form-group">
-                    <label for="exampleInputEmail1">Enrollment No.</label>
-                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="************" required>
+                    <label for="exampleInputEmail1"><b>Enrollment No.</b></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="************" pattern="[0-9]{12}" required >
                     <small id="emailHelp" class="form-text text-muted">must contain 8 numbers</small>
                 </div>
                 <b>OR</b>
                 <div class="form-group" >
-                    <label for="exampleInputEmail1" required>Seat No.</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" required>
+                    <label for="exampleInputEmail1" required><b>Seat No.</b></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="************" pattern="[0-9]{10}" required>
                 </div>
-               <button type="submit" class="btn btn-primary btn-danger">check result</button>
+               <button type="submit" class="btn btn-primary btn-danger"><b>check result</b></button>
              
             </form>
         </div>
